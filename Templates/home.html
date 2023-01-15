@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Face Mask Project</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">
+  </head>
+  <body>
+    <div class="top_head">
+      <div class="navbar">
+        <span>QUADStrivers</span>
+        <ul class="navbar_right" type="none">
+          <li>Home</li>
+          <li>Project</li>
+          <li>About</li>
+        </ul>
+      </div>
+      <div class="main_contn">Face Mask Project</div>
+    </div>
+    <div class="Project">
+      <div class="project_holder">
+        <div class="video_input">
+            <video id="video_input" autoplay=true></video>
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="bttn_div">
+          <input type="button" value="Capture Image" id="capture"/>
+          <div class="result">
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <span class="heading">~ Team ~</span>  
+        <div class="info">
+            <div class="info_contn">
+                <span class="name">Mohit Sharma</span> <br>
+                <span class="Designation">Web Developer</span> <br>
+                <span class="Designation">BTech, PI 2nd Year</span>
+            </div>
+            <div class="info_contn">
+                <span class="name">Atharv Chawra</span> <br>
+                <span class="Designation">ML/AI Developer</span> <br>
+                <span class="Designation">BTech, PI 2nd Year</span>
+            </div>
+            <div class="info_contn">
+                <span class="name">Syed Salman</span> <br>
+                <span class="Designation">ML/AI Developer</span> <br>
+                <span class="Designation">BTech, PI 2nd Year</span>
+            </div>
+            <div class="info_contn">
+                <span class="name">Arpan Kumar</span> <br>
+                <span class="Designation">ML/AI Developer</span> <br>
+                <span class="Designation">BTech, PI 2nd Year</span>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="{{url_for('static', filename='js/home.js')}}"></script>
+  </body>
+</html>
